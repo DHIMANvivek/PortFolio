@@ -46,3 +46,24 @@ function toggleDarkTheme() {
   document.body.classList.toggle("dark-theme");
   console.warn("Dark theme is implemented yet")
 }
+
+
+function downloadPageAsPDF() {
+    // Create a new jsPDF instance
+    const pdf = new jsPDF();
+
+    // Get the content element that you want to convert to PDF
+    const content = document.getElementById("content-to-pdf");
+
+    // Use html2canvas to capture the content as an image
+    html2canvas(content).then((canvas) => {
+      // Convert the canvas to a base64 image data
+      const imgData = canvas.toDataURL("image/jpeg");
+
+      // Add the image to the PDF
+      pdf.addImage(imgData, "JPEG", 0, 0, 210, 297); // Assuming A4 size (210x297 mm)
+
+      // Save the PDF with the name "download.pdf"
+      pdf.save("download.pdf");
+    });
+  }

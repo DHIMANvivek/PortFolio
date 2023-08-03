@@ -124,11 +124,12 @@
               </div>
             </div>
           </div>
-          <div class="personal-info-btn">
-            <a class="btn-1  x-block fs-18 fw-500" href="/cv.pdf" download="">
-              <span style="color:#fff" class="icon"><i class="fa-regular fa-download"></i></span>
-              download cv</a>
-          </div>
+  <div id="content-to-pdf" class="personal-info-btn">
+  <a class="btn-1  x-block fs-18 fw-500" href="#" onclick="downloadPageAsPDF()">
+    <span style="color:#fff" class="icon"><i class="fa-regular fa-download"></i></span>
+    Download CV
+  </a>
+</div>
         </div>
       </section>
 
@@ -492,7 +493,8 @@
     </div>
   </section>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   <script src="script.js"></script>
 </body>
 
