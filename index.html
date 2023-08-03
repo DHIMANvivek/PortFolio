@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="script.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!------Header Start-------->
+  <header class="fixed relative">
+    <div class=" container d-flex inline-right fixed">
+      <!-- <div>
+        <a class="logo_part" href="#"><img class="change-logo-color" src="img/logo_portfolio.svg"
+            alt="logo_portfolio"></a>
+      </div> -->
+      <div class="icon-container inline-center d-flex block-center">
+        <a class="block-center fa-2xl d-flex inline-space-between text-center" href="#" onclick="toggleDarkTheme()">
+          <i id="icons" class="fas fa-moon" style="color: var(--txtBlack);"></i>
+        </a>
+      </div>
+    </div>
+
+      <!-- <div class="header-menu-btn inline-right text-right">
+        <div class="dark-btn dark-btn-stored mode-btn"><i class="sunicon fa-light fa-sun-bright"></i></div>
+        <div class="menu-btn toggle_menu false "><span></span><span></span><span></span></div>
+      </div> -->
+
+      <div class="mobile-menu-wrap">
+        <div class="mobile-menu mobile_menu active ">
+          <div class="mean-bar"><a href="#nav" class="meanmenu-reveal"
+              style="right: 0px; left: auto; display: inline;"><span><span><span></span></span></span></a>
+            <nav class="mean-nav">
+              <ul>
+                <li class=" false false  " style="padding-top: 5px; padding-bottom: 4px;"><a href="#about"><span><i
+                        class="fa-light fa-user" style="font-size: 18px; margin-right: 10px;"></i></span>About</a></li>
+                <li class=" false false  " style="padding-top: 5px; padding-bottom: 4px;"><a href="#resume"><span><i
+                        class="fa-light fa-file-lines"
+                        style="font-size: 18px; margin-right: 10px;"></i></span>Resume</a></li>
+                <li class=" false active  " style="padding-top: 5px; padding-bottom: 4px;"><a href="#work"><span><i
+                        class="fa-light fa-briefcase" style="font-size: 18px; margin-right: 10px;"></i></span>Works</a>
+                </li>
+                <li class=" mean-last false  " style="padding-top: 5px; padding-bottom: 4px;"><a
+                    href="#contact"><span><i class="size-22 fa-light fa-address-book"
+                        style="font-size: 18px; margin-right: 10px;"></i></span>Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+  </header>
+  <!------Header End-------->
+
+  <!------About Start-------->
+  <section class="container">
+    <div class="grid">
+      <section>
+        <div class="personal-info-area sticky text-center">
+          <img class="profile-img"
+            src="https://avatars.githubusercontent.com/u/53940939?s=400&u=caedad9a99891ac6de7b43c5b77ac6c75fa4eecc&v=4"
+            alt="profile">
+          <h4 class="personal-info-name fw-500 fs-30"><a href="#">Vivek Dhiman</a></h4>
+          <span class="personal-info-bio mb-15 x-block fw-500 fs-14">Full Stack Development</span>
+          <ul class="personal-info-social-link d-flex block-center space-around">
+            <li><a class="x-block text-center" style="color:#1773EA" href="#"><i
+                  class="fa-brands fa-lg fa-facebook-f"></i></a>
+            </li>
+            <li><a class="x-block text-center" style="color:#1C9CEA" href="#"><i
+                  class="fa-brands fa-lg fa-twitter"></i></a>
+            </li>
+            <li><a class="x-block text-center" style="color:#e12a72" href="#"><i
+                  class="fa-brands fa-lg fa-instagram"></i></a>
+            </li>
+            <li><a class="x-block text-center" style="color:#144679" href="#"><i
+                  class="fa-brands fa-lg fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+          <div class="personal-info-contact text-left mb-30">
+            <div class="personal-info-contact-item d-flex block-center">
+              <div style="color:#E93B81;" class="icon fs-22 text-center x-block "><i
+                  class="fa-regular fa-lg fa-mobile"></i>
+              </div>
+              <div class="text x-block"><span class="block fw-400 mb-3">Phone</span>
+                <p class="fw-400">+91 6283415102</p>
+              </div>
+            </div>
+            <div class="personal-info-contact-item d-flex block-center">
+              <div style="color:#6AB5B9;" class="icon fs-22 text-center x-block"><i
+                  class="fa-regular fa-envelope-open-text"></i>
+              </div>
+              <div class="text x-block"><span class="block fw-400 mb-3">Email</span>
+                <p class="fw-400">dhimanvivek2000@gmail.com</p>
+              </div>
+            </div>
+            <div class="personal-info-contact-item d-flex block-center">
+              <div style="color:#FD7590;" class="icon fs-22 text-center x-block"><i
+                  class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="text x-block"><span class="block fw-400 mb-3">Location</span>
+                <p class="fw-400">India</p>
+              </div>
+            </div>
+            <div class="personal-info-contact-item d-flex block-center">
+              <div style="color:#C17CEB;" class="icon fs-22 text-center x-block"><i
+                  class="fa-light fa-calendar-days"></i>
+              </div>
+              <div class="text x-block"><span class="block fw-400 mb-3">Birthday</span>
+                <p class="fw-400">Oct 17, 2000</p>
+              </div>
+            </div>
+          </div>
+          <div class="personal-info-btn">
+            <a class="btn-1  x-block fs-18 fw-500" href="/cv.pdf" download="">
+              <span style="color:#fff" class="icon"><i class="fa-regular fa-download"></i></span>
+              download cv</a>
+          </div>
+        </div>
+      </section>
+
+      <!---About end-->
+
+      <!-------Page Content   -->
+      <section>
+        <div class="page-content-area">
+
+          <!---About content-->
+          <div class="section-about pl-30 pr-30 pt-30" id="about">
+            <div class="page-title-wrap mb-15">
+              <h2 class="page-title mb-15 x-block relative fs-40">About</h2>
+              <p class="fw-400 fs-16">I'm Full Stack Developer
+                from India, Punjab, working in VenturePact LLC as a Software Developer. I enjoy
+                turning complex problems into simple, beautiful and intuitive designs.</p>
+              <p class="fw-400 fs-16">My aim is to bring across your message and
+                identity in the most creative way. I created web design for many famous brand
+                companies.</p>
+            </div>
+          </div>
+
+          <div class="section-grid pr-30 pl-30">
+            <div class="section-title-grid mb-30">
+              <h3 class="section-title fs-28 fw-500">What I do!</h3>
+            </div>
+            <div class="row grid-what-i-do mb-30">
+              <div class="what-i-do-item d-flex mb-30">
+                <div class="icon" style="margin: 0px auto;"><img style="max-width: 100%;" width="130" height="40"
+                    src="img/logo_portfolio.svg" style="color: transparent; margin: 0px auto;">
+                </div>
+                <div class="text">
+                  <h4 class="title">Android Development</h4>
+                  <p class="fs-16">I have made few project using java for android development</p>
+                </div>
+              </div>
+
+              <div class="what-i-do-item d-flex mb-30">
+                <div class="icon" style="margin: 0px auto;"><img style="max-width: 100%;" width="130" height="40"
+                    src="img/logo_portfolio.svg" style="color: transparent; margin: 0px auto;">
+                </div>
+                <div class="text">
+                  <h4 class="title">Software Development</h4>
+                  <p class="fs-16">using eclipse i have develop some softwares</p>
+                </div>
+              </div>
+
+
+              <div class="what-i-do-item d-flex">
+                <div class="icon" style="margin: 0px auto;"><img style="max-width: 100%;" width="130" height="40"
+                    src="img/logo_portfolio.svg" style="color: transparent; margin: 0px auto;">
+                </div>
+                <div class="text">
+                  <h4 class="title">Frontend Development</h4>
+                  <p class="fs-16">Intermediate in Html Css Javascript </p>
+                </div>
+              </div>
+
+
+              <div class="what-i-do-item d-flex">
+                <div class="icon" style="margin: 0px auto;"><img style="max-width: 100%;" width="130" height="40"
+                    src="img/logo_portfolio.svg" style="color: transparent; margin: 0px auto;">
+                </div>
+                <div class="text">
+                  <h4 class="title">Devops Engineer</h4>
+                  <p class="fs-16">Knowledge of (CI/CD)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-Whitish">
+            <div class="section-title-grid text-center mb-50">
+              <h3 class="section-title fs-28 fw-500 text-center pt-45">Achievements</h3>
+            </div>
+            <div class="carousel-container pt-30 mb-30">
+              <div class="carousel section-grid-2 text-center">
+                <div class="carousel-item fs-18">Youtube Monetization</div>
+                <div class="carousel-item fs-18">Adsense Approval</div>
+                <div class="carousel-item fs-18">Ezoic Approval</div>
+                <div class="carousel-item fs-18">Hackathon Winner</div>
+              </div>
+              <button class="prev-btn mb-3">Previous</button>
+              <button class="next-btn mb-3">Next</button>
+            </div>
+          </div>
+
+          <div class="footer-copyright text-center pt-25 pb-25 poppins">
+            <marquee style=" color: black;"><span>Hard Works Always Pays Off</span></marquee>
+          </div>
+
+          <!---About content end-->
+
+        </div>
+
+
+
+        <div class="page-content-area">
+
+          <!---Resume content-->
+          <div class="section-resume pl-30 pr-30 pt-30" id="resume">
+            <div class="page-title-wrap mb-15">
+              <h2 class="page-title mb-15 x-block relative fs-40">Resume</h2>
+              <!-- <p class="fw-400 fs-16">I'm Full Stack Developer
+                from India, Punjab, working in VenturePact LLC as a Software Developer. I enjoy
+                turning complex problems into simple, beautiful and intuitive designs.</p>
+              <p class="fw-400 fs-16">My aim is to bring across your message and
+                identity in the most creative way. I created web design for many famous brand
+                companies.</p> -->
+            </div>
+
+
+            <div class="section-grid pr-30 pl-30">
+
+              <div class="row d-flex flex-wrap">
+                <div class="card-wrap mr-16">
+                  <div class="section-title-grid mb-20">
+                    <h4 class="section-title fw-500 fs-28"><img alt="icon" width="38" height="23"
+                        src="img/logo_portfolio.svg" style="color: transparent;">Education</h4>
+                  </div>
+                  <div class="resume-card-item mb-20 "><span
+                      class="resume-card-subtitle fs-14 fw-400 block">2021-2023</span>
+                    <h6 class="card-title fw-400 fs-18">B.Tech in IT <span>- Gne College,</span></h6>
+                    <p class="card-text fs-16 fw-400">Ludhiana, Punjab</p>
+                  </div>
+                  <div class="resume-card-item mb-20 "><span
+                      class="resume-card-subtitle fs-14 fw-400 block">2017-2021</span>
+                    <h6 class="card-title fw-400 fs-18">12th <span>- Senior Secondary</span></h6>
+                    <p class="card-text fs-16 fw-400">Bcm Senior Secondary School</p>
+                  </div>
+                  <div class="resume-card-item false mb-20"><span
+                      class="resume-card-subtitle fs-14 fw-400 block">2015-2017</span>
+                    <h6 class="card-title fw-400 fs-18">10th <span>- primary</span></h6>
+                    <p class="card-text fs-16 fw-400">Bcm Senior Secondary School</p>
+                  </div>
+                </div>
+
+                <div class="card-wrap">
+                  <div class="section-title-grid mb-20">
+                    <h4 class="section-title fw-500 fs-28"><img alt="icon" width="38" height="23"
+                        src="img/logo_portfolio.svg" style="color: transparent;">Experience</h4>
+                  </div>
+                  <div class="resume-card-item mb-20 "><span
+                      class="resume-card-subtitle fs-14 fw-400 block">July - present</span>
+                    <h6 class="card-title fw-400 fs-18">VenturePact LLC <span>,</span></h6>
+                    <p class="card-text fs-16 fw-400">Jalandhar, Punjab</p>
+                  </div>
+                  <div class="resume-card-item mb-20 "><span
+                      class="resume-card-subtitle fs-14 fw-400 block">6 Months - July 2023</span>
+                    <h6 class="card-title fw-400 fs-18">Spic Center Of Excellence <span>,</span></h6>
+                    <p class="card-text fs-16 fw-400">Chandigarh</p>
+                  </div>
+                  <div class="resume-card-item false mb-20"><span
+                      class="resume-card-subtitle fs-14 fw-400 block">2020</span>
+                    <h6 class="card-title fw-400 fs-18">Auribises Technology Pvt Limited<span>,</span></h6>
+                    <p class="card-text fs-16 fw-400">Ludhiana , Punjab</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row d-flex flex-wrap pt-70 pb-30 pl-30 pr-30">
+            <div class="skill-bar-wrap width-50">
+              <div class="section-title-wrap mb-20">
+                <h4 class="section-title fw-500 fs-26">Working Skills</h4>
+              </div>
+              <div class="skill-bar-item mb-30 ">
+                <div class="title-wrap  d-flex inline-space-between block-center">
+                  <h5 class="title fs-16 poppins">Web Development</h5><span class="count fs-16 poppins">85%</span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-line progress-bg-1" style="width: 85%; color: #04AA6D;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item mb-30 ">
+                <div class="title-wrap d-flex inline-space-between block-center">
+                  <h5 class="title fs-16 poppins">Mobile App</h5><span class="count fs-16 poppins">55%</span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-line progress-bg-2" style="width: 55%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item mb-30 ">
+                <div class="title-wrap d-flex inline-space-between block-center">
+                  <h5 class="title fs-16 poppins">Devops</h5><span class="count fs-16 poppins">65%</span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-line progress-bg-3" style="width: 65%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item false ">
+                <div class="title-wrap d-flex inline-space-between block-center">
+                  <h5 class="title fs-16 poppins">Javascript</h5><span class="count fs-16 poppins">72%</span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-line progress-bg-4" style="width: 72%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="knowledge-section width-50">
+              <div class="section-title-wrap mb-20">
+                <h4 class="section-title fs-26 fw-500">Knowledges</h4>
+              </div>
+              <div class="knowledeges-item-wrap fs-16"><span class="gk-item fw-400 x-block">Adsense</span><span
+                  class="gk-item fw-400 x-block">Marketing</span><span
+                  class="gk-item fw-400 x-block">Communication</span><span class="gk-item fw-400 x-block">Social
+                  Media</span><span class="gk-item fw-400 x-block">Time Management</span><span
+                  class="gk-item fw-400 x-block">Flexibility</span><span class="gk-item fw-400 x-block">Print</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-copyright text-center pt-25 pb-25 poppins"><span></span></div>
+
+          <!---Resume content end-->
+
+        </div>
+
+
+
+
+        <div class="page-content-area">
+
+          <!---Works content-->
+          <div class="section-resume pl-30 pr-30 pt-30" id="resume">
+            <div id="work" class="page-title-wrap mb-15">
+              <h2 class="page-title mb-15 x-block relative fs-40">Works</h2>
+            </div>
+
+
+            <div class="section-grid pr-30 pl-30">
+
+              <div class="row d-flex flex-wrap">
+                <div class="width-100">
+                  <ul class="fillter-btn-wrap buttonGroup isotop-menu-wrapper mb-30">
+                    <li class="fillter-btn fs-16 fw-500 x-block is-checked poppins">All</li>
+                    <li class="fillter-btn fs-16 fw-500 x-block poppins">Major Project</li>
+                    <li class="fillter-btn fs-16 fw-500 x-block poppins">Minor Project</li>
+                    <li class="fillter-btn fs-16 fw-500 x-block poppins">BrootForce</li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12">
+            <div id="fillter-item-active" class="fillter-item-wrap ">
+              <div>
+                <div
+                  style="display: flex; flex-direction: row; place-content: stretch center; box-sizing: border-box; width: 100%; gap: 0px;">
+                  <div
+                    style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 0px;">
+                    <div class="isotop-item logo" style="width: 100%; opacity: 1; transform: none;">
+                      <div class="fillter-item bg-prink" style="width: 100%;"><a class="img" href="#"
+                          data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/7.png"
+                            style="color: transparent; width: 100%; height: fit-content;"></a><span
+                          class="item-subtitle">Travel Landing , UX/UI</span>
+                        <h6 class="item-title"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolio-1">Chul
+                            urina</a></h6>
+                      </div>
+                    </div>
+                    <div class="isotop-item logo mockup" style="width: 100%; opacity: 1; transform: none;">
+                      <div class="fillter-item bg-catkrill" style="width: 100%;"><a class="img" href="#"
+                          data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/6.png"
+                            style="color: transparent; width: 100%; height: fit-content;"></a><span
+                          class="item-subtitle">Travel Landing , UX/UI</span>
+                        <h6 class="item-title"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolio-1">T-Shirt
+                            Design</a></h6>
+                      </div>
+                    </div>
+                    <div class="isotop-item design logo"
+                      style="width: 100%; opacity: 1; transform: none; transform-origin: 50% 50% 0px;">
+                      <div class="fillter-item bg-prink" style="width: 100%;"><a class="img" href="#"
+                          data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/4.png"
+                            style="color: transparent; width: 100%; height: fit-content;"></a><span
+                          class="item-subtitle">Travel Landing , UX/UI</span>
+                        <h6 class="item-title"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolio-1">Modern
+                            Bag Design</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 0px;">
+                    <div class="isotop-item design mockup" style="width: 100%; opacity: 1; transform: none;">
+                      <div class="fillter-item bg-catkrill" style="width: 100%;"><a class="img" href="#"
+                          data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/3.png"
+                            style="color: transparent; width: 100%; height: fit-content;"></a><span
+                          class="item-subtitle">Travel Landing , UX/UI</span>
+                        <h6 class="item-title"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolio-1">Aura
+                            Dione</a></h6>
+                      </div>
+                    </div>
+                    <div class="isotop-item mockup" style="width: 100%; opacity: 1; transform: none;">
+                      <div class="fillter-item bg-prink" style="width: 100%;"><a class="img" href="#"
+                          data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/2.png"
+                            style="color: transparent; width: 100%; height: fit-content;"></a><span
+                          class="item-subtitle">Travel Landing , UX/UI</span>
+                        <h6 class="item-title"><a href="#" data-bs-toggle="modal"
+                            data-bs-target="#portfolio-1">Packaging Box</a></h6>
+                      </div>
+                    </div>
+                    <div class="isotop-item mockup design" style="width: 100%; opacity: 1; transform: none;">
+                      <div class="fillter-item bg-catkrill" style="width: 100%;"><a class="img" href="#"
+                          data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/1.png"
+                            style="color: transparent; width: 100%; height: fit-content;"></a><span
+                          class="item-subtitle">Travel Landing , UX/UI</span>
+                        <h6 class="item-title"><a href="#" data-bs-toggle="modal" data-bs-target="#portfolio-1">Chul
+                            urina</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-copyright text-center pt-25 pb-25 poppins"><span>© <!-- -->2023<!-- --> All Rights Reserved
+              by Vivek Dhiman.</span></div>
+
+
+        </div>
+        <!---Works content end-->
+      </section>
+
+      <!-------Page Content   -->
+
+      <!-- Main Menu Start -->
+
+      <section>
+        <div class="main-menu-area sticky">
+          <nav class="main-menu main_menu block">
+            <ul>
+              <li class="active d-flex inline-center text-center"><a
+                  class="smooth-scroll d-flex  inline-center text-center fw-500" href="#about"
+                  onclick="changeBackgroundColor(this)"><span><i class="fa-light fa-user"
+                      style="font-size: 25px;"></i></span>About</a></li>
+              <li class="d-flex inline-center text-center"><a class="d-flex inline-center text-center fw-500"
+                  href="#resume" onclick="changeBackgroundColor(this)"><span><i class="fa-light fa-file-lines"
+                      style="font-size: 25px;"></i></span>Resume</a></li>
+              <li class="d-flex inline-center text-center"><a class="d-flex inline-center text-center fw-500"
+                  href="#work" onclick="changeBackgroundColor(this)"><span><i class="fa-light fa-briefcase"
+                      style="font-size: 25px;"></i></span>Works</a></li>
+              <li class="d-flex inline-center text-center"><a class="d-flex inline-center text-center fw-500" href="#"
+                  onclick="changeBackgroundColor(this)"><span><i class="size-22 fa-light fa-address-book"
+                      style="font-size: 25px;"></i></span>Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+
+      <!-- Main Menu End -->
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
