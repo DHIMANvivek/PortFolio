@@ -48,13 +48,13 @@ function toggleDarkTheme() {
 }
 
 
-function generatePDF() {
-  const element = document.getElementById("resume");
-  html2pdf().from(element).save();
-}
+// function generatePDF() {
+//   const element = document.getElementById("resume");
+//   html2pdf().from(element).save();
+// }
 
-function alls(){
-console.log("all");
+function alls() {
+  console.log("all");
   document.getElementById("first").style.display = "block";
   document.getElementById("second").style.display = "block";
   document.getElementById("third").style.display = "block";
@@ -63,23 +63,36 @@ console.log("all");
   document.getElementById("sixth").style.display = "block";
 }
 
-function major(){
+function major() {
   document.getElementById("first").style.display = "none";
   document.getElementById("third").style.display = "none";
   document.getElementById("fourth").style.display = "none";
   document.getElementById("fifth").style.display = "none";
   document.getElementById("sixth").style.display = "none";
-  
+
 }
 
-function minor(){
+function minor() {
   document.getElementById("fifth").style.display = "block";
   document.getElementById("sixth").style.display = "block";
-  
+
 }
 
-function broots() 
-{
-    document.getElementById("second").style.display = "block";
+function broots() {
+  document.getElementById("second").style.display = "block";
 }
+
+
+
+
+
+function generatePDF() {
+  window.print();
+
+}
+
+
+$("#button").on("click", function () {
+  $("body").scrollTop(0);
+});
 
