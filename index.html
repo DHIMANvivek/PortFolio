@@ -15,25 +15,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="script.js"></script>
-
+  
+  <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 
 <body>
+  <div class="container">
   <!------Header Start-------->
-  <header class="fixed relative">
-    <div class=" container d-flex inline-right fixed">
-      <!-- <div>
+  <header class=" relative" style="margin-bottom: 100px;">
+    <div class=" container d-flex inline-space-between">
         <a class="logo_part" href="#"><img class="change-logo-color" src="img/logo_portfolio.svg"
             alt="logo_portfolio"></a>
-      </div> -->
-      <div class="icon-container inline-center d-flex block-center">
-        <a class="block-center fa-2xl d-flex inline-space-between text-center" href="#" onclick="toggleDarkTheme()">
-          <i id="icons" class="fas fa-moon" style="color: var(--txtBlack);"></i>
-        </a>
-      </div>
     </div>
 
       <!-- <div class="header-menu-btn inline-right text-right">
@@ -63,19 +58,20 @@
           </div>
         </div>
       </div>
-  </header>
-  <!------Header End-------->
-
+    </header>
+    <!------Header End-------->
+    
   <!------About Start-------->
-  <section class="container">
-    <div class="grid">
-      <section>
-        <div class="personal-info-area sticky text-center">
-          <img class="profile-img"
+    <main class="grid">
+        <aside class="sticky personal-info-area text-center container">
+         <div class="profile-img"> <img class="profile-img"
             src="https://avatars.githubusercontent.com/u/53940939?s=400&u=caedad9a99891ac6de7b43c5b77ac6c75fa4eecc&v=4"
             alt="profile">
-          <h4 class="personal-info-name fw-500 fs-30"><a href="#">Vivek Dhiman</a></h4>
-          <span class="personal-info-bio mb-15 x-block fw-500 fs-14">Full Stack Development</span>
+          </div>
+          <h4 class="personal-info-name fw-500 fs-30  mb-15">Vivek Dhiman
+    
+          <span class="personal-info-bio x-block fw-500 fs-14">Full Stack Development</span>
+          </h4>
           <ul class="personal-info-social-link d-flex block-center space-around">
             <li><a class="x-block text-center" style="color:#1773EA" href="#"><i
                   class="fa-brands fa-lg fa-facebook-f"></i></a>
@@ -124,27 +120,25 @@
               </div>
             </div>
           </div>
-  <div id="content-to-pdf" class="personal-info-btn">
-  <a class="btn-1  x-block fs-18 fw-500" href="#" onclick="downloadPageAsPDF()">
-    <span style="color:#fff" class="icon"><i class="fa-regular fa-download"></i></span>
-    Download CV
-  </a>
-</div>
-        </div>
-      </section>
+          <div class="personal-info-btn">
+            <a onclick="generatePDF()" class="btn-1  x-block fs-18 fw-500" download="">
+              <span style="color:#fff" class="icon"><i class="fa-regular fa-download"></i></span>
+              download cv</a>
+          </div>
+        </aside>   
 
       <!---About end-->
 
       <!-------Page Content   -->
       <section>
-        <div class="page-content-area">
+        <div class=" page-content-area">
 
           <!---About content-->
           <div class="section-about pl-30 pr-30 pt-30" id="about">
             <div class="page-title-wrap mb-15">
               <h2 class="page-title mb-15 x-block relative fs-40">About</h2>
               <p class="fw-400 fs-16">I'm Full Stack Developer
-                from India, Punjab, working in VenturePact LLC as a Software Developer. I enjoy
+                from India, Punjab, working in VenturePact LLC as a Associate Software Developer. I enjoy
                 turning complex problems into simple, beautiful and intuitive designs.</p>
               <p class="fw-400 fs-16">My aim is to bring across your message and
                 identity in the most creative way. I created web design for many famous brand
@@ -157,9 +151,9 @@
               <h3 class="section-title fs-28 fw-500">What I do!</h3>
             </div>
             <div class="row grid-what-i-do mb-30">
-              <div class="what-i-do-item d-flex mb-30">
+              <div class="what-i-do-item d-flex mb-30 bg-prink">
                 <div class="icon" style="margin: 0px auto;"><img style="max-width: 100%;" width="130" height="40"
-                    src="img/logo_portfolio.svg" style="color: transparent; margin: 0px auto;">
+                    src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/app-development.svg" style="color: transparent; margin: 0px auto;">
                 </div>
                 <div class="text">
                   <h4 class="title">Android Development</h4>
@@ -167,9 +161,9 @@
                 </div>
               </div>
 
-              <div class="what-i-do-item d-flex mb-30">
+              <div class="what-i-do-item d-flex mb-30 bg-catkrill">
                 <div class="icon" style="margin: 0px auto;"><img style="max-width: 100%;" width="130" height="40"
-                    src="img/logo_portfolio.svg" style="color: transparent; margin: 0px auto;">
+                    src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/webdev.svg" style="color: transparent; margin: 0px auto;">
                 </div>
                 <div class="text">
                   <h4 class="title">Software Development</h4>
@@ -178,9 +172,9 @@
               </div>
 
 
-              <div class="what-i-do-item d-flex">
+              <div class="what-i-do-item d-flex bg-catkrill">
                 <div class="icon" style="margin: 0px auto;"><img style="max-width: 100%;" width="130" height="40"
-                    src="img/logo_portfolio.svg" style="color: transparent; margin: 0px auto;">
+                    src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/webdev.svg" style="color: transparent; margin: 0px auto;">
                 </div>
                 <div class="text">
                   <h4 class="title">Frontend Development</h4>
@@ -189,9 +183,9 @@
               </div>
 
 
-              <div class="what-i-do-item d-flex">
+              <div class="what-i-do-item d-flex bg-prink">
                 <div class="icon" style="margin: 0px auto;"><img style="max-width: 100%;" width="130" height="40"
-                    src="img/logo_portfolio.svg" style="color: transparent; margin: 0px auto;">
+                    src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/webdev.svg" style="color: transparent; margin: 0px auto;">
                 </div>
                 <div class="text">
                   <h4 class="title">Devops Engineer</h4>
@@ -224,9 +218,6 @@
           <!---About content end-->
 
         </div>
-
-
-
         <div class="page-content-area">
 
           <!---Resume content-->
@@ -245,46 +236,48 @@
             <div class="section-grid pr-30 pl-30">
 
               <div class="row d-flex flex-wrap">
-                <div class="card-wrap mr-16">
+                <div class="card-wrap mr-16" style="margin-right: 46px;">
                   <div class="section-title-grid mb-20">
-                    <h4 class="section-title fw-500 fs-28"><img alt="icon" width="38" height="23"
-                        src="img/logo_portfolio.svg" style="color: transparent;">Education</h4>
+                    <h4 class="section-title fw-500 fs-28"><img alt="icon" width="38" height="23"  style="margin-right: 6px;"
+                        src="https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fedu-icon.png&w=48&q=75" style="color: transparent;">Education</h4>
                   </div>
-                  <div class="resume-card-item mb-20 "><span
+                  <div class="resume-card-item mb-20 bg-prink"><span
                       class="resume-card-subtitle fs-14 fw-400 block">2021-2023</span>
                     <h6 class="card-title fw-400 fs-18">B.Tech in IT <span>- Gne College,</span></h6>
                     <p class="card-text fs-16 fw-400">Ludhiana, Punjab</p>
                   </div>
-                  <div class="resume-card-item mb-20 "><span
+                  <div class="resume-card-item mb-20 bg-catkrill"><span
                       class="resume-card-subtitle fs-14 fw-400 block">2017-2021</span>
                     <h6 class="card-title fw-400 fs-18">12th <span>- Senior Secondary</span></h6>
-                    <p class="card-text fs-16 fw-400">Bcm Senior Secondary School</p>
+                    <h6 class="card-text fs-18 fw-400">Bcm Senior Secondary School</h6>
+                     <p class="card-text fs-16 fw-400">Ludhiana, Punjab</p>
                   </div>
-                  <div class="resume-card-item false mb-20"><span
-                      class="resume-card-subtitle fs-14 fw-400 block">2015-2017</span>
-                    <h6 class="card-title fw-400 fs-18">10th <span>- primary</span></h6>
-                    <p class="card-text fs-16 fw-400">Bcm Senior Secondary School</p>
+                  <div class="resume-card-item mb-20 bg-catkrill"><span
+                      class="resume-card-subtitle fs-14 fw-400 block">2017-2021</span>
+                    <h6 class="card-title fw-400 fs-18">10th <span>- Primary</span></h6>
+                    <h6 class="card-text fs-18 fw-400">Bcm Senior Secondary School</h6>
+                     <p class="card-text fs-16 fw-400">Ludhiana, Punjab</p>
                   </div>
                 </div>
 
                 <div class="card-wrap">
                   <div class="section-title-grid mb-20">
-                    <h4 class="section-title fw-500 fs-28"><img alt="icon" width="38" height="23"
-                        src="img/logo_portfolio.svg" style="color: transparent;">Experience</h4>
+                    <h4 class="section-title fw-500 fs-28"><img alt="icon" width="30" height="27" style="margin-right: 6px;"
+                        src="https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fexper-icon.png&w=32&q=75" style="color: transparent;">Experience</h4>
                   </div>
-                  <div class="resume-card-item mb-20 "><span
-                      class="resume-card-subtitle fs-14 fw-400 block">July - present</span>
-                    <h6 class="card-title fw-400 fs-18">VenturePact LLC <span>,</span></h6>
+                  <div class="resume-card-item mb-20 bg-prink"><span
+                      class="resume-card-subtitle fs-14 fw-400 block">July - Present</span>
+                    <h6 class="card-title fw-400 fs-18">@VenturePact LLC , Software Developer</h6>
                     <p class="card-text fs-16 fw-400">Jalandhar, Punjab</p>
                   </div>
-                  <div class="resume-card-item mb-20 "><span
+                  <div class="resume-card-item mb-20 bg-prink"><span
                       class="resume-card-subtitle fs-14 fw-400 block">6 Months - July 2023</span>
-                    <h6 class="card-title fw-400 fs-18">Spic Center Of Excellence <span>,</span></h6>
-                    <p class="card-text fs-16 fw-400">Chandigarh</p>
+                    <h6 class="card-title fw-400 fs-18">Android Development @<span>Spic Center Of Excellence ,</span></h6>
+                    <p class="card-text fs-16 fw-400">Chandigarh , IT Park</p>
                   </div>
-                  <div class="resume-card-item false mb-20"><span
+                  <div class="resume-card-item false mb-20 bg-catkrill"><span
                       class="resume-card-subtitle fs-14 fw-400 block">2020</span>
-                    <h6 class="card-title fw-400 fs-18">Auribises Technology Pvt Limited<span>,</span></h6>
+                    <h6 class="card-title fw-400 fs-18">Java Developer @<span>Auribises Technology Private Limited ,</span></h6>
                     <p class="card-text fs-16 fw-400">Ludhiana , Punjab</p>
                   </div>
                 </div>
@@ -295,8 +288,8 @@
 
           </div>
 
-          <div class="row d-flex flex-wrap pt-70 pb-30 pl-30 pr-30">
-            <div class="skill-bar-wrap width-50">
+          <div class="row d-flex  flex-wrap pt-70 pb-30 pl-30 pr-30">
+            <div class="skill-bar-wrap width-50" style="margin-right: 46px;">
               <div class="section-title-wrap mb-20">
                 <h4 class="section-title fw-500 fs-26">Working Skills</h4>
               </div>
@@ -352,10 +345,6 @@
           <!---Resume content end-->
 
         </div>
-
-
-
-
         <div class="page-content-area">
 
           <!---Works content-->
@@ -370,15 +359,14 @@
               <div class="row d-flex flex-wrap">
                 <div class="width-100">
                   <ul class="fillter-btn-wrap buttonGroup isotop-menu-wrapper mb-30">
-                    <li class="fillter-btn fs-16 fw-500 x-block is-checked poppins">All</li>
-                    <li class="fillter-btn fs-16 fw-500 x-block poppins">Major Project</li>
-                    <li class="fillter-btn fs-16 fw-500 x-block poppins">Minor Project</li>
-                    <li class="fillter-btn fs-16 fw-500 x-block poppins">BrootForce</li>
+                    <li onclick="alls()" class="fillter-btn fs-16 fw-500 x-block is-checked poppins">All</li>
+                    <li onclick="major()" class="fillter-btn fs-16 fw-500 x-block poppins">Major Project</li>
+                    <li onclick="minor()" class="fillter-btn fs-16 fw-500 x-block poppins">Minor Project</li>
+                    <li onclick="broots()" class="fillter-btn fs-16 fw-500 x-block poppins">BrootForce</li>
                   </ul>
                 </div>
-
               </div>
-
+              <img src="http://ghchart.rshah.org/DHIMANvivek" alt="2016rshah's Github chart" />
             </div>
 
           </div>
@@ -390,8 +378,8 @@
                   style="display: flex; flex-direction: row; place-content: stretch center; box-sizing: border-box; width: 100%; gap: 0px;">
                   <div
                     style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 0px;">
-                    <div class="isotop-item logo" style="width: 100%; opacity: 1; transform: none;">
-                      <div class="fillter-item bg-prink" style="width: 100%;"><a class="img" href="#"
+                    <div  class="isotop-item logo" style="width: 100%; opacity: 1; transform: none;">
+                      <div id="first" class="fillter-item bg-prink" style="width: 100%;"><a class="img" href="#"
                           data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/7.png"
                             style="color: transparent; width: 100%; height: fit-content;"></a><span
                           class="item-subtitle">Travel Landing , UX/UI</span>
@@ -400,7 +388,7 @@
                       </div>
                     </div>
                     <div class="isotop-item logo mockup" style="width: 100%; opacity: 1; transform: none;">
-                      <div class="fillter-item bg-catkrill" style="width: 100%;"><a class="img" href="#"
+                      <div id="second" class="fillter-item bg-catkrill" style="width: 100%;"><a class="img" href="#"
                           data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/6.png"
                             style="color: transparent; width: 100%; height: fit-content;"></a><span
                           class="item-subtitle">Travel Landing , UX/UI</span>
@@ -410,7 +398,7 @@
                     </div>
                     <div class="isotop-item design logo"
                       style="width: 100%; opacity: 1; transform: none; transform-origin: 50% 50% 0px;">
-                      <div class="fillter-item bg-prink" style="width: 100%;"><a class="img" href="#"
+                      <div id="third" class="fillter-item bg-prink" style="width: 100%;"><a class="img" href="#"
                           data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/4.png"
                             style="color: transparent; width: 100%; height: fit-content;"></a><span
                           class="item-subtitle">Travel Landing , UX/UI</span>
@@ -422,7 +410,7 @@
                   <div
                     style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 0px;">
                     <div class="isotop-item design mockup" style="width: 100%; opacity: 1; transform: none;">
-                      <div class="fillter-item bg-catkrill" style="width: 100%;"><a class="img" href="#"
+                      <div id="fourth" class="fillter-item bg-catkrill" style="width: 100%;"><a class="img" href="#"
                           data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/3.png"
                             style="color: transparent; width: 100%; height: fit-content;"></a><span
                           class="item-subtitle">Travel Landing , UX/UI</span>
@@ -431,7 +419,7 @@
                       </div>
                     </div>
                     <div class="isotop-item mockup" style="width: 100%; opacity: 1; transform: none;">
-                      <div class="fillter-item bg-prink" style="width: 100%;"><a class="img" href="#"
+                      <div id="fifth" class="fillter-item bg-prink" style="width: 100%;"><a class="img" href="#"
                           data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/2.png"
                             style="color: transparent; width: 100%; height: fit-content;"></a><span
                           class="item-subtitle">Travel Landing , UX/UI</span>
@@ -440,7 +428,7 @@
                       </div>
                     </div>
                     <div class="isotop-item mockup design" style="width: 100%; opacity: 1; transform: none;">
-                      <div class="fillter-item bg-catkrill" style="width: 100%;"><a class="img" href="#"
+                      <div id="sixth" class="fillter-item bg-catkrill" style="width: 100%;"><a class="img" href="#"
                           data-bs-toggle="modal"><img alt="portfolio" width="310" height="310" src="img/1.png"
                             style="color: transparent; width: 100%; height: fit-content;"></a><span
                           class="item-subtitle">Travel Landing , UX/UI</span>
@@ -454,47 +442,122 @@
             </div>
           </div>
 
+          <div class="footer-copyright text-center pt-25 pb-25 poppins"><span></span></div>
+
+
+        </div>
+        <!---Works content end-->
+
+
+        <!---Contact Us Begin-->
+<div class="page-content-area">
+
+          <div class="section-resume pl-30 pr-30 pt-30" id="contact">
+            <div id="contact" class="page-title-wrap mb-15">
+              <h2 class="page-title mb-15 x-block relative fs-40">Contact</h2>
+            </div>
+
+
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13698.71699549033!2d75.7887786560336!3d30.867654042307763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a8191eafb86e7%3A0x4bc0f2c5784dfa61!2sBasant%20City%2C%20Ludhiana%2C%20Punjab%20142022!5e0!3m2!1sen!2sin!4v1691315022563!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          </div>
+
+          </div>
+    <div class="contacts-9 section-gap">
+      <div class="wrapper">
+        <div class="d-grid contact-view">
+          <div class="cont-details">
+            <div class="cont-top">
+              <div class="cont-left text-center">
+                <span class="fa fa-phone text-primary"></span>
+              </div>
+              <div class="cont-right">
+                <h6>Call Us</h6>
+                <p><a href="tel:+44 99 555 42">+91 6283415102</a></p>
+              </div>
+            </div>
+            <div class="cont-top margin-up">
+              <div class="cont-left text-center">
+                <span class="fa fa-envelope text-primary"></span>
+              </div>
+              <div class="cont-right">
+                <h6>Email Us</h6>
+                <p><a href="googlydhiman.4236@gmail.com" class="mail">googlydhiman.4236@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="cont-top margin-up">
+              <div class="cont-left text-center">
+                <span class="fa fa-map-marker text-primary"></span>
+              </div>
+              <div class="cont-right">
+                <h6>Address</h6>
+                <p>407/A Dhiman Niwas , Central Town , Ludhiana</p>
+              </div>
+            </div>
+          </div>
+          <div class="map-content-9">
+            <form action="https://sendmail.w3layouts.com/submitForm" method="post">
+              <div class="twice-two">
+                <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name" required="">
+                <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email"
+                  required="">
+              </div>
+              <div class="twice">
+                <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="Subject"
+                  required="">
+              </div>
+              <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message"
+                required=""></textarea>
+              <button type="submit" class="btn btn-contact">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
           <div class="footer-copyright text-center pt-25 pb-25 poppins"><span>© <!-- -->2023<!-- --> All Rights Reserved
               by Vivek Dhiman.</span></div>
 
 
         </div>
-        <!---Works content end-->
+
+        <!----Contact Us Ended-->
       </section>
 
       <!-------Page Content   -->
 
-      <!-- Main Menu Start -->
+  <div class="fixed icon-container inline-center d-flex block-center">
+    <a class="block-center fa-2xl d-flex inline-space-between text-center" href="#" onclick="toggleDarkTheme()">
+      <i id="icons" class="fas fa-moon" style="color: var(--txtBlack);"></i>
+    </a>
+  </div>
 
-      <section>
-        <div class="main-menu-area sticky">
-          <nav class="main-menu main_menu block">
-            <ul>
+      <!-- Main Menu Start -->
+        <nav class="main-menu-area sticky">
+            <ul class="main-menu main_menu block">
               <li class="active d-flex inline-center text-center"><a
                   class="smooth-scroll d-flex  inline-center text-center fw-500" href="#about"
                   onclick="changeBackgroundColor(this)"><span><i class="fa-light fa-user"
                       style="font-size: 25px;"></i></span>About</a></li>
-              <li class="d-flex inline-center text-center"><a class="d-flex inline-center text-center fw-500"
+              <li false class="d-flex inline-center text-center"><a class="d-flex inline-center text-center fw-500"
                   href="#resume" onclick="changeBackgroundColor(this)"><span><i class="fa-light fa-file-lines"
                       style="font-size: 25px;"></i></span>Resume</a></li>
-              <li class="d-flex inline-center text-center"><a class="d-flex inline-center text-center fw-500"
+              <li false class="d-flex inline-center text-center"><a class="d-flex inline-center text-center fw-500"
                   href="#work" onclick="changeBackgroundColor(this)"><span><i class="fa-light fa-briefcase"
                       style="font-size: 25px;"></i></span>Works</a></li>
-              <li class="d-flex inline-center text-center"><a class="d-flex inline-center text-center fw-500" href="#"
+              <li false class="d-flex inline-center text-center"><a class="d-flex inline-center text-center fw-500" href="#contact"
                   onclick="changeBackgroundColor(this)"><span><i class="size-22 fa-light fa-address-book"
                       style="font-size: 25px;"></i></span>Contact</a></li>
             </ul>
-          </nav>
-        </div>
-      </section>
-
-
+        </nav>
       <!-- Main Menu End -->
-    </div>
-  </section>
+    </main>
+  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
   <script src="script.js"></script>
 </body>
 

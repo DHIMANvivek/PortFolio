@@ -48,22 +48,38 @@ function toggleDarkTheme() {
 }
 
 
-function downloadPageAsPDF() {
-    // Create a new jsPDF instance
-    const pdf = new jsPDF();
+function generatePDF() {
+  const element = document.getElementById("resume");
+  html2pdf().from(element).save();
+}
 
-    // Get the content element that you want to convert to PDF
-    const content = document.getElementById("content-to-pdf");
+function alls(){
+console.log("all");
+  document.getElementById("first").style.display = "block";
+  document.getElementById("second").style.display = "block";
+  document.getElementById("third").style.display = "block";
+  document.getElementById("fourth").style.display = "block";
+  document.getElementById("fifth").style.display = "block";
+  document.getElementById("sixth").style.display = "block";
+}
 
-    // Use html2canvas to capture the content as an image
-    html2canvas(content).then((canvas) => {
-      // Convert the canvas to a base64 image data
-      const imgData = canvas.toDataURL("image/jpeg");
+function major(){
+  document.getElementById("first").style.display = "none";
+  document.getElementById("third").style.display = "none";
+  document.getElementById("fourth").style.display = "none";
+  document.getElementById("fifth").style.display = "none";
+  document.getElementById("sixth").style.display = "none";
+  
+}
 
-      // Add the image to the PDF
-      pdf.addImage(imgData, "JPEG", 0, 0, 210, 297); // Assuming A4 size (210x297 mm)
+function minor(){
+  document.getElementById("fifth").style.display = "block";
+  document.getElementById("sixth").style.display = "block";
+  
+}
 
-      // Save the PDF with the name "download.pdf"
-      pdf.save("download.pdf");
-    });
-  }
+function broots() 
+{
+    document.getElementById("second").style.display = "block";
+}
+
