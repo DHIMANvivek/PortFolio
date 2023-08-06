@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function changeBackgroundColor(element) {
   // Get all list items inside the navigation
-  const listItems = document.querySelectorAll('.main-menu ul li');
+  const listItems = document.querySelectorAll('.main-menu-area ul li');
 
   // Remove the "active" class from all list items
   listItems.forEach(item => item.classList.remove('active'));
